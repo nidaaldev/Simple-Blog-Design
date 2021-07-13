@@ -8,7 +8,7 @@
 }
 
 body {
-    background: #F9F9F9;
+    background: #EDEEF7;
     font-size: 16px;
     font-family: 'Open Sans', Arial, sans-serif;
 }
@@ -44,7 +44,6 @@ header .menu .active {
 }
 
 .main {
-    background: #EDEEF7;
     padding: 100px;
 }
 
@@ -62,6 +61,7 @@ header .menu .active {
     width: 50%;
     margin: 0 auto;
     margin-bottom: 20px;
+    vertical-align: top;
 }
 
 .main .posts .post .post-title {
@@ -88,8 +88,35 @@ footer p {
     color: #fff;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 900px) {
     .main .posts .post img {
         width: 100%;
     }
+
+    .main {
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    .main .posts .post .post-title {
+        font-size: 20px;
+    }
+
+    .main .posts .post p {
+        font-size: 14px;
+    }
 }
+
+@media screen and (max-width: 550px) {
+    
+    header .menu {
+        display: flex;
+        justify-content: center;
+    }
+
+    header .menu a {
+        font-size: 20px;
+        margin: 10px;
+    }
+}
+
