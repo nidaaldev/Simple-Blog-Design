@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F9F9F9;
+    font-size: 16px;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background: #CDF0EA;
+    padding: 50px;
+}
+
+header .menu a {
+    text-decoration: none;
+    color: #000;
+    font-size: 30px;
+    margin: 20px;
+    font-family: 'Encode Sans SC', Arial, sans-serif;
+    font-weight: 400;
+    transition: .4s ease all;
+}
+
+header .menu a:hover {
+    color: #fff;
+    transition: .2s ease all;
+}
+
+header .menu .active {
+    color: #fff;
+}
+
+.main {
+    background: #EDEEF7;
+    padding: 100px;
+}
+
+.main .posts .post {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    padding: 40px;
+    margin-bottom: 100px;
+    background: #DDDDDD;
+}
+
+.main .posts .post img {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.main .posts .post .post-title {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.main .posts .post p {
+    margin-bottom: 10px;
+}
+
+.main .posts .post .info {
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+footer {
+    padding: 20px;
+    background: #000;
+}
+
+footer p {
+    text-align: center;
+    color: #fff;
+}
+
+@media screen and (max-width: 650px) {
+    .main .posts .post img {
+        width: 100%;
+    }
+}
